@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        h2{
+            color: #145596;
+        }
+        .img-container {
+            height: 925px;
+            /* width: 400px; */
+        }
+
+        .r1 {
+            position: relative;
+            bottom: 618px;
+            left: 343px;
+        }
+
+        .r2 {
+            position: relative;
+            bottom: 657px;
+            left: 416px;
+        }
+
+        .r3 {
+            position: relative;
+            bottom: 585px;
+            left: 275px;
+        }
+
+        .r4 {
+            position: relative;
+            bottom: 379px;
+            left: 400px;
+        }
+.chat-container{
+   
+}
+        .r5 {
+            position: relative;
+           bottom: 461px;
+            left: 268px;
+        }
+        .chartRef{
+            margin:  0 auto;
+        }
+
+        .r6 {
+            position: relative;
+           bottom: 450px;
+    left: 320px;
+        }
+
+        .r7 {
+            position: relative;
+           bottom: 351px;
+    left: 324px;
+        }
+
+        .r8 {
+            position: relative;
+           bottom: 372px;
+    left: 265px;
+        }
+
+        p {
+            border: 2px dashed #aecce5;
+            /* 2px宽的虚线边框，颜色为#ccc */
+            padding: 10px;
+            /* 段落内边距 */
+            margin: 10px 0;
+            /* 段落外边距，上下为10px，左右为0 */
+        }
+
+        .icon1,
+        .icon2 {
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        .icon1 {
+            top: 90px;
+            left: 285px;
+        }
+
+        .icon2 {
+            top: -511px;
+            /* left: 481px; */
+        }
+
+        .white {
+            position: relative;
+            left: 30px;
+            bottom: 30px;
+        }
+
+        .way {
+            background-color: white;
+            height: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 30px;
+        }
+
+        .way h4 {
+            color: #007bff;
+        }
+
+        .block {
+            width: 250px;
+            height: 150px;
+            margin-right: 20px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+       position: relative;
+        }
+
+        .block:hover {
+            transform: translateY(-10px) scale(1.05);
+
+            /* 阴影效果 */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+            /* 颜色变化 */
+            background-color: #0099ff;
+            /* 例如，改为蓝色 */
+            color: #ffffff;
+        }
+
+        .blue1,
+        .blue2 {
+            background-color: #007bff;
+            color: white;
+
+        }
+
+        .blue1,
+        .deepblue1,
+        .white {
+            transform: rotate(-14deg);
+        }
+        .blue1,
+        .deepblue1,
+        .shadowblue1{
+             top: 100px;
+               left: 80px;
+          
+        }
+
+        .blue2,
+        .deepblue2,
+        .shadowblue1 {
+            transform: rotate(14deg);
+        }
+        .blue2,
+        .deepblue2,
+        .white {
+           bottom: 100px;
+           left: 50px;
+        }
+
+        .deepblue1,
+        .deepblue2 {
+            background-color: #145596;
+            color: white;
+        }
+
+        .shadowblue1,
+        .shadowblue2 {
+            background-color: #aac8eb;
+
+        }
+
+        .white {
+            color: #007bff;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+
+        .window {
+            height: 400px;
+            background-color: #edf4ff;
+            padding-top: 20px;
+            padding-left: 20px;
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+
+        .all {
+            background-color: #007bff;
+            border-radius: 30px;
+            font-size: 12px;
+            color: white;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+        }
+
+        .all:hover {
+            transform: translateY(-10px) scale(1.05);
+
+            /* 阴影效果 */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+            /* 颜色变化 */
+            background-color: #0099ff;
+            /* 例如，改为蓝色 */
+            color: #ffffff;
+        }
+
+        .me {
+            margin-right: 20px;
+            margin-top: 10px;
+            text-align: center;
+
+        }
+
+        .bubble1 {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .bubble2 {
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .bubble3 {
+            width: 300px;
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .bubble4 {
+            width: 140px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+
+        .chat {
+            background-color: white;
+            height: 600px;
+            padding-top: 30px;
+        }
+
+        .chat h1 {
+            margin: 30px;
+            margin-left: 110px;
+        }
+
+        .chat h1::before {
+            content: "---";
+            color: rgb(134, 184, 234);
+
+        }
+
+        .chat h1::after {
+            content: "---";
+            color: rgb(134, 184, 234);
+
+        }
+
+        /* 添加动态效果 */
+        .chat-bubble:hover {
+            transform: translateY(-5px);
+        }
+
+        /* styles.css */
+        .chat-container {
+            width: 500px;
+            border: 1px solid rgb(131, 195, 250);
+            box-shadow: 0px 4px 8px 0px rgba(0, 123, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+            padding: 10px;
+            margin: 20px auto;
+            background-color: white;
+            position: relative;
+            /* max-height: 500px; */
+            font-size: 12px;
+            overflow-y: auto;
+            border-radius: 30px;
+        }
+
+        #showMore {
+            box-shadow: 0px 4px 8px 0px rgba(0, 123, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+            border: #007bff;
+            background-color: #6ba1db;
+            color: white;
+            border-radius: 520px;
+            width: 150px;
+            height: 60px;
+            margin-left: 150px;
+        }
+
+        .showMore {
+            box-shadow: 0px 4px 8px 0px rgba(0, 123, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+            border: #007bff;
+            background-color: #6ba1db;
+            color: white;
+            border-radius: 520px;
+            width: 150px;
+            height: 60px;
+            margin-left: 250px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .showMore:hover {
+            transform: translateY(-10px) scale(1.05);
+
+            /* 阴影效果 */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+            /* 颜色变化 */
+            background-color: #3498db;
+            /* 例如，改为蓝色 */
+            color: #ffffff;
+        }
+
+        #showMore:hover {
+            box-shadow: 0px 8px 16px 0px rgba(0, 123, 255, 0.3);
+        }
+
+        .chat-container:hover {
+            box-shadow: 0px 8px 16px 0px rgba(0, 123, 255, 0.3);
+        }
+
+        .your-bubble {
+            margin-left: 300px;
+            float: left;
+            background-color: #ddd;
+            /* 你的消息颜色 */
+        }
+
+        .bubble {
+            background-color: rgb(170, 200, 235);
+            color: rgb(12, 101, 190);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            max-width: 70%;
+            float: left;
+            clear: both;
+
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        /* 根据消息归属添加不同的浮动方向 */
+        .bubble.mine {
+            float: right;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* 动画效果 */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 动画效果 */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* 应用动画 */
+        .your-bubble {
+            animation: slideIn 0.5s forwards;
+        }
+
+        .my-bubble {
+            animation: slideIn 0.5s forwards;
+        }
+
+        /* 水墨画 */
+        .water-ink-circle {
+            position: relative;
+            width: 40px;
+            /* 根据需要调整大小 */
+            height: 40px;
+            background: transparent;
+            display: none;
+        }
+
+        .water-ink-circle svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* 定义水墨画效果的 CSS 动画 */
+        @keyframes ink-spread {
+            from {
+                stroke-width: 2;
+                stroke-opacity: 1;
+            }
+
+            to {
+                stroke-width: 10;
+                stroke-opacity: 0;
+            }
+        }
+
+        /* 应用水墨画效果 */
+        .water-ink-circle path {
+            animation: ink-spread 2s infinite;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        @keyframes slideUpFade {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+                /* 初始状态，文字稍微向下偏移，透明度为0 */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                /* 结束状态，文字滚动到原始位置，透明度为1 */
+            }
+        }
+
+        /* 定义动画名称 */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+                /* 初始状态，图片在底部，透明度为0 */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                /* 动画结束状态，图片滚动到原始位置，透明度为1 */
+            }
+        }
+
+        /* 应用动画到图片 */
+        img.lbxx {
+            animation: slideUp 0.5s ease forwards;
+            /* 应用动画，持续时间0.5秒，缓动函数ease，动画完成后保持最后一帧状态 */
+    display: block;
+    margin: 0 auto;
+        }
+
+        .fix {
+            position: fixed;
+            background-color: white;
+            top: 0;
+        }
+
+        .dav {
+            background-image: url('./assets/微信图片_20240819130030.jpg') ;
+            background-position:center ;
+            opacity: 0.8;
+            background-size: 1450px;
+background-repeat:no-repeat;
+            /* backface-visibility: visible; */
+            background-color: white;
+            height: 130px;
+            width: 1423px;
+            margin-left: -50px;
+            padding-top: 40px;
+            position: fixed;
+            top: 0;
+            z-index: 30;
+            transition: transform 0.3s ease all;
+
+        }
+        .dav:hover{
+             opacity: 1;
+        }
+
+        .dav a {
+            color:#223952;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+
+        .dav a:hover {
+            text-decoration:underline rgb(22, 84, 155);
+           
+        }
+
+        .dav .a {
+            margin-left: 240px;
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .gradient-background {
+            margin: 0 auto;
+            width: 1323px;
+            /* height: 10000px; */
+            background: repeating-radial-gradient(circle, #FFFFFF 0%, #b4d5f8 100%), linear-gradient(90deg, #FFF1EB 0%, #b4d5f8 100%);
+            background-size: 3000px 3000px;
+            /* padding-top: 200px; */
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .middle {
+            width: 830px;
+            margin: 0 auto;
+            /* margin-top: 100px; */
+            padding-top: 100px;
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: 800;
+            font-family: "SimSun", sans-serif;
+            margin-top: 100px;
+
+        }
+
+        .sub-title {
+            font-size: 40px;
+            line-height: 20px;
+            font-weight: 800;
+            font-family: "SimSun", sans-serif;
+            margin-left: 20px;
+            margin-bottom: 100px;
+        }
+        .dx{
+            background-image: url('./assets/微信图片_20240819130030.jpg') ;
+            background-position:center;
+            opacity: 0.4; 
+            height: 100px;
+            color: #a194ce;
+
+        }
+        .dxa h2{
+            color: #2900bd;
+            text-decoration: none;
+            text-align: center;
+            line-height: 100px;
+            font-size: 50px;
+        }
+        
+
+        .content p {
+            /* letter-spacing:0.2em; */
+            font-family: "SimSun", sans-serif;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(20px);
+            animation-fill-mode: forwards;
+            /* white-space: nowrap; */
+
+        }
+
+        figcaption {
+            text-align: center;
+            /* 文字居中对齐 */
+            font-size: 0.9em;
+            /* 字体大小 */
+            color: #666;
+            /* 字体颜色 */
+            margin-top: 10px;
+            /* 图片与文字之间的间距 */
+        }
+        .p1{
+            margin-top: 90px;
+        }
+       h6{
+        font-weight: 600;
+        line-height: 0px;
+       }
+        .two{
+            display: flex;
+            background-color: white;
+            justify-content:space-evenly
+        }
+.written{
+    width: 217px;
+    display: flex;
+    flex-direction: column;
+}
+        .content .lbxx {
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+            z-index: 0;
+        }
+
+        .waterInkCircle {
+            width: 400px;
+            object-fit: fill;
+        }
+
+        .img {
+            /* background-image: url('./assets/微信图片_20240819130005.png'); */
+            background-position: center;
+            background-attachment:scroll ;
+            height: 100px;
+            padding: 20px;
+        }
+
+        .first,
+        .second,
+        .third {
+            /* background-color: white; */
+            padding: 20px;
+            background-color: rgb(212, 230, 250);
+            border-radius: 30px;
+            margin-top: 20px;
+
+        }
+
+        .yxjw {
+            width: 600px;
+            height: 900px;
+            margin: 0 auto;
+        }
+
+        .opao {
+            width: 600px;
+            margin: 0 auto;
+            object-fit: fill;
+        }
+
+        .team {
+            text-indent: 17em;
+            line-height: 30px;
+        }
+
+        .name {
+            text-indent: 14em;
+            line-height: 30px;
+
+        }
+
+        .none {
+            height: 200px;
+        }
+         .content p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient-background">
+
+        <div class="dav">
+
+            <div class="a"><a href="#" class="anchor-link1" @click="scrollToFirstSection">1、 隐形家务是谁在做？</a>
+                <a href="#" class="anchor-link2" @click="scrollToSecondSection">2、 “隐形家务”带来的困扰</a>
+                <a href="#" class="anchor-link3" @click="scrollToThirdSection">3. 让“隐形家务”及其承担者被看到</a>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="title">维持家庭运转的无数细节：</div>
+            <div class="sub-title">
+                <p>你家的隐形家务</p>
+                <p>谁在做？</p>
+            </div>
+            <!-- 内容 -->
+            <div class="content">
+                <p> 小新和爸爸广志头一次知道“<span class="nosee">隐形家务</span>”这回事，还是因为妈妈美伢偶然在电视节目中知道了什么叫“看不见的家务” 。</p>
+                <figure><img class="lbxx" src="./assets/微信图片_20240814151244.png"> </figure>
+                <figcaption>图源：《蜡笔小新》国语版</figcaption>
+                <p>保证冰箱⾥随时有冰爽的麦茶、 厕所⾥永远有厕纸、要洗⾐服时永远有洗⾐液、烹饪出美味饭菜的秘诀是什么？动画《蜡笔小新》 中妈妈美伢给出的答案是：有⼈永远记得
+                    采购茶包、泡茶并放进冰箱冰镇，永远记得补充厕纸和洗
+                    ⾐液、有耐⼼备菜切菜 . . . . . .</p>
+                <br>
+                <br>
+                <p>“看不⻅的家务”也有⼀个更贴切的名字，那就是“隐形家务”。</p>
+                <br>
+                <br>
+                <p>梅田悟司在《无名家事图鉴》解释道，隐形家务是指“一般没人提起、说不出名字的、但又必须有人去做”的家务。包括
+                    “做菜前构思菜单”、“洗⾐服之前补充洗⾐液”、“为空了的垃圾桶套上垃圾袋”、“把握⽇⽤品库存”等⼀共163项。</p>
+                <div class="first">
+                    <h2>1、 隐形家务是谁在做？</h2>
+                    <div class="img-container">
+                        <button class="showMore">点击图片红圈逐渐出现</button>
+                        <div class="two">
+                            <img class="waterInkCircle ink" src='./assets/Snipaste_2024-08-18_20-37-51.png'>
+                            <div class="written">
+                                <div class="p1">
+                                    <h6>植物记得及时浇水</h6>
+                                    <h6>到晚垃圾级的垃圾袋</h6>
+                                    <h6>喝完水的杯子要及时清洗</h6>
+                                    <h6>壁画上的灰尘要及时清理</h6>
+                                </div>
+                                <div class="p1">
+                                    <h6>抽油烟机里的集油杯要定期清洗</h6>
+                                    <h6>做完饭后要记得擦燃气灶</h6>
+                                    <h6>调料瓶每隔几周要擦洗一遍</h6>
+                                </div>
+                                <div class="p1">
+                                    <h6>马桶要掀马桶盖</h6>
+                                    <h6>
+                                        补充用完了的纸巾、牙膏等消耗品</h6>
+                                    <h6>洗衣服时要将衣服分类晒衣服前可以先抖一</h6>
+                                    <h6>抖地漏里的脏东西需要清理干净</h6>
+                                </div>
+                                <div class="p1">
+                                    <h6>换季衣服要叠好放好床单要定期除</h6>
+                                    <h6>螨定期更换三件套</h6>
+                                    <h6></h6>
+                                </div>
+                    
+                            </div>
+                        </div>
+                        <div class="water-ink-circle r1">
+                            <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1 C27.3 1, 35 8.7, 35 18 C35 27.3, 27.3 35, 18 35 C8.7 35, 1 27.3, 1 18 C1 8.7, 8.7 1, 18 1 z"
+                                    fill="none" stroke="red" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="water-ink-circle r2">
+                            <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1 C27.3 1, 35 8.7, 35 18 C35 27.3, 27.3 35, 18 35 C8.7 35, 1 27.3, 1 18 C1 8.7, 8.7 1, 18 1 z"
+                                    fill="none" stroke="red" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="water-ink-circle r3">
+                            <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1 C27.3 1, 35 8.7, 35 18 C35 27.3, 27.3 35, 18 35 C8.7 35, 1 27.3, 1 18 C1 8.7, 8.7 1, 18 1 z"
+                                    fill="none" stroke="red" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="water-ink-circle r4">
+                            <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1 C27.3 1, 35 8.7, 35 18 C35 27.3, 27.3 35, 18 35 C8.7 35, 1 27.3, 1 18 C1 8.7, 8.7 1, 18 1 z"
+                                    fill="none" stroke="red" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="water-ink-circle r5">
+                            <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1 C27.3 1, 35 8.7, 35 18 C35 27.3, 27.3 35, 18 35 C8.7 35, 1 27.3, 1 18 C1 8.7, 8.7 1, 18 1 z"
+                                    fill="none" stroke="red" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="water-ink-circle r6">
+                            <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1 C27.3 1, 35 8.7, 35 18 C35 27.3, 27.3 35, 18 35 C8.7 35, 1 27.3, 1 18 C1 8.7, 8.7 1, 18 1 z"
+                                    fill="none" stroke="red" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="water-ink-circle r7">
+                            <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1 C27.3 1, 35 8.7, 35 18 C35 27.3, 27.3 35, 18 35 C8.7 35, 1 27.3, 1 18 C1 8.7, 8.7 1, 18 1 z"
+                                    fill="none" stroke="red" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="water-ink-circle r8">
+                            <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1 C27.3 1, 35 8.7, 35 18 C35 27.3, 27.3 35, 18 35 C8.7 35, 1 27.3, 1 18 C1 8.7, 8.7 1, 18 1 z"
+                                    fill="none" stroke="red" stroke-width="2" />
+                            </svg>
+                        </div>
+                    
+                    </div>
+                    <p>把玄关的鞋子摆整齐、扔掉床头柜的垃圾、换季整理衣物、扔完垃圾后套上新的垃圾袋、及时处理冰箱里的剩菜、定期清理扫地机器人/洗碗机/洗衣机……正如《无名家事图鉴》中写道的：“这些琐碎的家务源源不断，由于其劳动效果的‘不可见’，做的人很少产生成就感，也很少能得到家庭成员的赞美。
+                        ”</p>
+                    <br>
+                    <br>
+                    <p>上海交通大学国际与公共事务学院副教授沈洋也认为：“家务劳动的价值，除了抚育子女、照料老人等有形的家务劳动，实际上还有一些隐形的家务劳动，往往是被忽视的。这些隐形的家务劳动包括“认知劳动”，例如买菜时需要操心家里缺什么以及食材搭配，挑选婴儿车时需要在性价比、轻便、好看等因素中权衡。她认为这些购物中的权衡也是‘认知劳动’，它通常是无形的。”
+                    </p>
+                    <!-- <div class="yxjw"><img class="yxjw" src="./assets/微信图片_20240814151253.png"></div> -->
+                    <br>
+
+                    <p>而成百上千的隐形家务就像机器中一颗颗看似不起眼的螺丝钉，只要少了一枚，生活就会像失灵的机器一样无法正常运转。</p>
+                    <br>
+                    <br>
+                    <!-- <p>而成百上千的隐形家务就像机器中一颗颗看似不起眼的螺丝钉，只要少了一枚，生活就会像失灵的机器一样无法正常运转。</p> -->
+                    <br>
+                    <!-- <div class="dif" style="height: 400px;"></div> -->
+                    <br>
+                    <p>那么这个被迫缝缝补补地完成这些小事的人是谁呢？</p>
+                    <br>
+                    <p>首先，在家里承担更多家务的人最有可能“包圆”了这些隐形家务。</p>
+                    <br>
+                    <br>
+                    <!-- <div class="unmarry" style="height: 600px;"></div>
+                    <div class="unmerry" style="height: 600px;"></div>
+                    <div class="married" style="height: 600px;"></div>
+                    <div class="merried" style="height: 600px;"></div>
+                    <figcaption>数据来源：问卷《2023现代人隐形家务调查》</figcaption> -->
+                    
+                    <p>根据2020年第四期中国妇女社会地位调查显示，在业女性工作日平均总劳动时间为649分钟，其中有酬劳动时间为495分钟；照料家庭成员和做饭/清洁/日常采购等家务劳动时间为154分钟，约为男性的2倍。
+                    </p>
+                    <br>
+                    
+                    <br>
+                    <p>而在微博#隐形家务#相关话题下，我们筛选出558条评论进行词频分析，发现家务、 隐形家务、快递、夫妻关系、女性、清单、不知道、感觉等关键词位居前列。</p>
+                    <div class="chartRef" style="width: 500px; ;height: 500px"></div>
+                    <figcaption>来源：微博“智搜”近30天统计</figcaption>
+                    <br>
+                    <div class="chat-container">
+                        <!-- 假设有多个聊天气泡，初始时隐藏 -->
+                        <div class="bubble my-bubble">家务特别像剥洋葱，以为就到这一层了，没想到还有一层</div>
+                        <div class="bubble my-bubble">有些已婚女性，即使找了保姆来干，那招保姆和安排保姆这些事，也是女性在干。</div>
+                        <div class="bubble your-bubble">逃避家务和逃避学习一样，只会带来更多问题。</div>
+                        <div class="bubble your-bubble hidden">很想辞去家庭卖卖官的职位,比价凑单选品实在是太累了.</div>
+                        <div class="bubble my-bubble hidden">我是看不见隐形家务的那一方，看到男朋友洗完澡后清理厕所，我才发现这些是我都没做过</div>
+                        <div class="bubble  your-bubble hidden">最神奇的是，明明忙了半天，却不知道自己在忙什么</div>
+                        <div class="bubble my-bubble hidden">家庭人口越多，家务量越大。</div>
+                        <!-- 更多聊天气泡 -->
+                    </div>
+                    <button id="showMore">点击查看聊天记录</button>
+
+                    <figcaption>微博网友在“隐形家务”热搜下发表的讨论</figcaption>
+                    <br>
+                    <br>
+
+                    <br>
+                    <p>针对隐形家务是谁在做的问题，网易槽植发布的《2023现代人隐形家务调查报告》也对此有所研究。该报告从“槽值”公众号关注者中收集了5210位成年男女的问卷，并得通过问卷数据得出分析结果。</p>
+                    <br>
+                    <br>
+                    <p>调查报告显示，参与问卷调查的女性主要负责的隐形家务有换季整理衣柜、晾衣服并叠好收纳、整理冰箱卫生库存、采购家庭卫生用品、洗分类/集中脏衣物等，而男性主要负责的隐形家务则有及时补充日用品库存、清理下水道/地漏、更换清洗床单窗帘等等。
+                    </p>
+                    <br>
+                    <br>
+                    <p>其中，只有约半成男性关注过换季衣柜的整理，61.99%的男性采购过家庭卫生用品，59.73%的男性整理过冰箱卫生库存，而做过这两项家务的女性比例分别达到了98.23%和84.18%。及时补充日用品库存、更换清洗床单窗帘两项隐形家务则更多是男性在负责。
+                    </p>
+                <div class="dif" style="height: 400px;"></div>
+                    <figcaption>数据来源：问卷《2023现代人隐形家务调查》</figcaption>
+                    <br>
+                    <br>
+                    <p>随着数字技术走进我们生活的方方面面，除了以上常见的隐形家务，更“隐形”的家庭工作其实都藏在小小的手机里。</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p>论文《数字时代的“田螺姑娘”：家务数字化与女性劳动隐形化》就提到现代女性经常会面临的三类数字化隐形劳动：拇指操作和界面劳动、线上家校沟通和关系管理以及“在群中”的信息劳动。文章中作者所访谈的13位不同年龄不同工作的女性都承担了日常的数字化隐形家务，例如线上选购食材和日常用品并进行比价，在家长群中接收孩子的信息、与老师微信沟通、加入各种拼单群和购物群并关注相关的购物信息......正如访谈对象所说的：“原本大家还有各自的分工，技术发展越来越方便以后，全成了我一个人做了，像清洗空调、油烟机，更换路由器、安装摄像头这些以前是他(丈夫)的工作，现在都我来和各种上门服务的公司对接。”
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <p>《而论文《数字经济、家庭分工与性别平等》中则研究了数字经济对家庭内部夫妻双方时间分配的影响。数据显示，在数字经济的发展下，尽管夫妻双方参与工作的时长都有所提升，但丈夫参与工作的时间和闲暇时间仍然高于妻子，且妻子参与家务劳动的时间是丈夫的两倍左右。
+                    </p>
+                    <div class="tall" style="height:400px"></div>
+                    <figcaption>数据来源：《数字经济、家庭分工与性别平等》</figcaption>
+                    <br>
+
+                </div>
+                <div class="second">
+                    <h2>2、
+                        “隐形家务”带来的困扰</h2>
+                    <br>
+                    <br>
+                    <p>承担隐形家务的人最大的困扰应该是所做的事情很难被别人看到，进而很难得到家庭成员的认可。</p>
+                    <br>
+                    <br>
+                    <p>《2023现代人隐形家务调查报告》显示，隐形家务所带来的困扰主要有“吞噬时间精力”、“家人无视忽略”、“被认为没有价值、很轻松”。而且由于隐形家务的不可见性，承担大量隐形家务的人往往会陷入“好像什么都没做却很累”的两难境地。
+                    </p>
+
+                    <br>
+                    <br>
+                   
+                    <br>
+                    <br>
+                    
+<div class="pic" style="height: 300px;"></div>
+<figcaption>数据来源：问卷《2023现代⼈隐形家务调查》</figcaption>
+                    <br>
+                    <div class="chat">
+                        <h1>关于隐形家务的崩溃瞬间</h1>
+                        <div class="window">
+                            <div class="bubble1 me all">这是你应该做的</div>
+                            <div class="bubble2 me all">返工</div>
+                            <div class="bubble3 me all">我觉得不乱</div>
+                            <div class="bubble4 me all">家人不认真细致</div>
+                            <div class="bubble4 me all">有什么难的</div>
+                            <div class="bubble3 me all">你在家都干嘛了</div>
+                            <div class="bubble1 me all">别大题小做</div>
+                            <div class="bubble4 me all">怎么还没好</div>
+                            <div class="bubble2 me all">你就顺手做了</div>
+                            <div class="bubble3 me all">所有女人都是这么过来的</div>
+                            <div class="bubble4 me all">我帮你</div>
+                            <div class="bubble2 me all">根本不重要的地方，每天洗洗刷刷擦擦抹抹</div>
+                            <div class="bubble4 me all">不被看见</div>
+                            <div class="bubble4 me all">身心俱疲</div>
+                        </div>
+                        <figcaption>数据来源：问卷《2023现代⼈隐形家务调查》</figcaption>
+                    </div>
+                    <br>
+                    <p>接受我们采访的小满也提到隐形家务让人困扰的原因：“忙了一天发现还有这些琐事要收拾，可以把隐形家务理解为压死骆驼的最后一根稻草。”</p>
+                    <br>
+                    <br>
+                    <p>另一方面，数字化的隐形家务则会给执行者带来更多的其他困扰，如在网上采买日常用品、凑满减、家校沟通的过程中会由于接收了过多信息而产生严重的“信息疲劳”，在线上沟通中付出大量的情感劳动，影响了隐形家务执行者的正常生活。
+                    </p>
+                    <br>
+                    <br>
+                   
+                  
+                    <br>
+                    <br>
+                    <p>“我有两部手机和两个微信账号，本来打算分开来，一个是工作用的，一个是私人生活用的。但是我发现我根本没法分开，所有的时间里我都必须轮流查看两部手机的信息。这个手机信息提示声响了，我知道有工作要找我了，那个手机电话响了，我知道家里有事要找我了。”——来自《数字时代的“田螺姑娘”：家务数字化与女性劳动隐形化》的访谈内容
+                    </p>
+                    <br>
+                </div>
+                <div class="third">
+                    <div class="img">
+                        <h2>3. 让“隐形家务”及其承担者被看到</h2>
+                    </div>
+                    <br>
+                    <br>
+                    <p>民法典第1088条规定，明确了只要夫妻一方对家庭付出较多劳动，无论夫妻财产是共有制还是分别制，在离婚时都有权向另一方请求家务补偿。</p>
+                    <br>
+                   
+                    <br>
+                    <p>中华人民共和国妇女权益保障法第六十八条中也提到了夫妻双方应当共同负担家庭义务，共同照顾家庭生 活 。</p>
+                    <br>
+                    <br>
+                    <p>女方因抚育子女、照料老人、协助男方工作等负担较多义务的，有权在离婚时要求男方予以补偿。补偿办法由双方协议确定；协议不成的，可以向人民法院提起诉讼</p>
+                    <br>
+                    <br>
+
+                    <p>虽然法律规定了家务补偿条例，随着家政行业的发展，部分家务也可以通过市场价去衡量，但是隐形家务是无法通过金钱去量化的，通过屏幕完成的数字化的“隐形家务”更是会剥削劳动者的时间和精力</p>
+                    <br>
+                    <!-- <div class="yxjw"><img class="yxjw" src="./assets/微信图片_20240814151253.png"></div> -->
+                    <!-- <div class="influence" style="height: 500px;"></div> -->
+                    <br>
+                    <br>
+                    <p>小满家中隐形家务的分工也发生过较大的转变。“之前我妈妈是主要负责隐形家务的人。但一家四口的家务量实在太大，她就会要求家里的其他人也顺手完成隐形家务。现在家里的大部分隐形家务已经被我们重视起来并自觉完成了。
+                    </p>
+                    <br>
+                   
+                    <br>
+                    <p>家务合理分工很重要。如果只让一个或两个人去做这些隐形家务，那这些任务永远只会是他们的义务，享受这些劳动成果的人也会觉得理所应当。这很不公平。”</p>
+                    <br>
+                    <div class="way">
+                        <h4>以下是关于“隐形家务”网友提出的一些解决方案</h4>
+                        <div class="blue1 block">
+                            云柠wh:我男朋友承担了很多明面上的家务，做饭洗碗洗衣服什么的，我对他的贤惠很是欣慰，而我喜欢收纳整理什么的，更偏向于隐形家务，为了不让他觉得我啥都没做，我都会大声说出来。</div>
+                        <div class="deepblue2 block">
+                            Mr_湃:我俩都单休，周末的时候会一起收拾屋子，我做饭她洗碗两个人本来就是要互相体谅互相理解互相包容，你累了我就多做点，我累了你也会多承担些，日子就是这么过下去的。</div>
+                        <div class="shadowblue1 block">
+                            鬼岛kijima:我觉得最好的解决办法就是分工分区，一个人分工了这一部分事务，就一直由他承担，这一块的卫生是谁打扫就一直是谁打扫，如果对方不千或者敷衍，那就都别干了。</div>
+                        <div class="white block">
+                            夏安澈的小天地:许多女性承担家务，并且很多人将女性承担家里一切家务视为理所当然，因此才提倡男人和男孩做家务。许多女性将做家务视为自己对家庭中的贡献，她自己本身就是会期望在家庭中能够得到尊重的。所以就算承担了家务，也不忘对女性表达尊重。
+                        </div>
+                    
+                        <div class="deepblue1 block">星夜冰蓝:扫地机器人和洗碗机真的是家务利器，就算是机器人不能清理的彻底,洗碗机对少量餐具比较浪费，想躺平时候还是能制造出躺平的时间的。
+                        </div>
+                        <div class="blue2 block">
+                            蛋糕日常:我老公刷马桶，灶台，拖地板，丢垃圾，修家具，开车接送家庭成员，他做的很多很好都没有人会看到会夸赞他，所以我会在他做家务的时候夸赞感谢他，让他知道我看到了他的付出。
+                        </div>
+                        <img class="icon1" src="./assets/Snipaste_2024-08-18_15-50-41.png"><img class="icon2"
+                            src="./assets/Snipaste_2024-08-18_15-50-58.png">
+                    </div>
+                    <br>
+
+                    <p>从网友的评论中可以看到，家庭成员间应当互相沟通，将“隐形家务”列出来共同分工，或者是告诉对方自己做了那些“不被看到”的家务 ，减少家庭误解，让“ 隐形家务”有形化。</p>
+                    <br>
+                    <br>
+                    <p>再者，随着科学技术的发展，部分家务如洗碗、扫地等可交由机器来进行，让科技解放双手。</p>
+                    <br>
+                    <br>
+                    <p>“隐形家务”因其琐碎性，我们常常忽略它的价值，完成它的人也不会因此产生过多的成就感。</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p>但是我们应当意识到，“隐形家务”也是维系家庭生活的重要部分之一，在家庭成员完成它时，身边人应当给予赞美，但是不能过多的赞美，因为激励机制会让人们误解为完成这项“隐形家务”是一项义务。</p>
+                    <br>
+                    <br>
+                    <p>隐形家务”不能被忽视和边缘化，在家庭生活中，家庭成员需要共同付诸行动，要让“隐形家务”被看到，让“隐形家务”付出被理解。</p>
+                    <br>
+                    <br>
+                    <p>你家是如何分配隐形家务的呢？（应受访者要求，文中“小满”为化名）</p>
+                    <br>
+                    <a class="dxa" href="https://www.wjx.cn/vm/tNH6vX5.aspx"><div class="dx"><h2>调查问卷</h2></div></a>
+                </div>
+                <div class="source">
+                    <p>数据来源及参考资料</p>
+                    <p>1、微博“智搜”关于“隐形家务”词条下发布的内容统计</p>
+                    <p>2、网易槽植.《2023现代人隐形家务调查报告》</p>
+                    <p>3、《蜡笔小新》国语版第九集004话</p>
+                    <p>4、哔哩哔哩.YP杨英鹏《隐形家务是什么？》</p>
+                    <p>5、微信公众号.我要WHATYOUNEED《同居时，别小看
+                        用手机完成的家务活噢。》</p>
+                    <p>7、中国知网.宋美杰《数字时代的“田螺姑娘”
+                        ：家务数字
+                        化与女性劳动隐形化研究》</p>
+                    <p>四川美术学院.2024年毕业设计展《隐形家务》</p>
+                    <p>9、《民法典》第1088条</p>
+                    <p>10、《中华人民共和国妇女权益保障法》第七章第六十八条</p>
+                    <p>11.澎湃新闻。《学者沈洋：家务不应该变成被爱掩盖的无偿劳动》</p>
+                    <p>12.全国妇联、国家统计局.《第四期中国妇女社会地位调查》</p>
+                    <p>13.中国知网.张勋、杨紫、谭莹《数字经济、家庭分工与性别平等》</p>
+                    <br>
+
+                    <div class="team">作者团队：</div>
+                    <div class="name">吴晓雯 谢丹 谢思婷 谢颖妍 廖秋婵</div>
+                    <div class="none"></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<!-- 引入 ECharts 词云图模块 -->
+<script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.0.0/dist/echarts-wordcloud.min.js"></script>
+<script >
+  document.querySelector('.anchor-link1').addEventListener('click',(e)=>{
+      e.preventDefault(); // 阻止链接默认行为
+      scrollToElement('.first');
+  })
+  document.querySelector('.anchor-link2').addEventListener('click',(e)=>{
+      e.preventDefault(); // 阻止链接默认行为
+      scrollToElement('.second');
+  })
+  document.querySelector('.anchor-link3').addEventListener('click',(e)=>{
+      e.preventDefault(); // 阻止链接默认行为
+      scrollToElement('.third');
+  })
+   
+    // 滚动到第二个部分的方法
+    
+    // 通用滚动方法，传入选择器作为参数
+    const scrollToElement = (selector) => {
+        const element = document.querySelector(selector);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('img.lbxx');
+
+        images.forEach(image => {
+            let observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        image.style.animation = 'slideUp 0.5s ease forwards';
+                        observer.unobserve(image); // 动画完成后停止观察
+                    }
+                });
+            });
+
+            observer.observe(image);
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // 获取所有需要观察的文本元素
+        const texts = document.querySelectorAll('.content p');
+
+        // 创建一个IntersectionObserver实例
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // 如果元素进入视口，触发滑动和渐变动画
+                    entry.target.style.animation = 'slideUpFade 1s ease forwards';
+                }
+            });
+        }, {
+            rootMargin: '100px', // 定义一个根边界，可以是正值或负值
+            threshold: 0.1 /* 触发动画的阈值，当元素10%可见时触发 */
+        });
+
+        // 观察所有文本元素
+        texts.forEach(text => {
+            observer.observe(text);
+        });
+    });
+
+
+    //waterInkCircle
+
+//男女对比
+
+
+
+    // 20秒后自动移除红圈
+   document.querySelector('.waterInkCircle').addEventListener('click',()=>{
+       const circles = document.querySelectorAll('.water-ink-circle');
+       // 为每个水波纹设置延迟显示
+       circles.forEach((circle, index) => {
+           setTimeout(() => {
+               circle.style.display = 'block';
+           }, index * 1000); // 假设每个水波纹之间有100毫秒的延迟
+       });
+   }) 
+       
+    
+
+
+
+
+
+    // 创建红圈元素
+
+
+
+
+    // 将红圈添加到图片的父元素中
+
+
+
+    // 词云统计
+    
+            const chartRef = document.querySelector('.chartRef'); // 确保选择器匹配您的元素类名
+       
+            const option = {
+               series: [
+                    {
+                        type: 'wordCloud',
+                        shape: 'rectangle',
+                        keepAspect: false,
+                        maskImage: null,
+                        left: "center",
+                        top: "center",
+                        width: "70%",
+                        height: "80%",
+                        right: null,
+                        bottom: null,
+                        sizeRange: [12, 80],
+                        rotationRange: [0, 0],
+                        rotationStep: 45,
+                        gridSize: 8,
+                        drawOutOfBound: false,
+                        shrinkToFit: false,
+                        layoutAnimation: true,
+                        textStyle: {
+                            fontFamily: "sans-serif",
+                            fontWeight: "bold",
+                             color: function () {
+                                // 随机颜色
+                                return 'rgb(' + [
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160)
+                                ].join(',') + ')';
+                            }
+                        },
+                        emphasis: {
+                            focus: "self",
+                            textStyle: {
+                                textShadowBlur: 10,
+                                textShadowColor: "#333"
+                            }
+                        },
+                        data: [
+                            {
+                                name: "看不下去",
+                                value: 17,
+                            },
+                            {
+                                name: "垃圾桶打扫",
+                                value: 22
+                            },
+                            {
+                                name: "不知道",
+                                value: 25
+                            },
+                            {
+                                name: "付出那么多",
+                                value: 27
+                            },
+                            {
+                                name: "永远",
+                                value: 30
+                            },
+                            {
+                                name: "毕业家政",
+                                value: 32
+                            },
+                            {
+                                name: "看不到",
+                                value: 37
+                            },
+                            {
+                                name: "厨房顺手",
+                                value: 43
+                            },
+                            {
+                                name: "洗碗清单",
+                                value: 143
+                            },
+                            {
+                                name: "隐形家务",
+                                value: 350
+                            },
+                            {
+                                name: "不完",
+                                value: 142
+                            },
+                            {
+                                name: "不算",
+                                value: 163
+                            },
+                            {
+                                name: "干家务",
+                                value: 9
+                            },
+                            {
+                                name: "事情",
+                                value: 8
+                            },
+                            {
+                                name: "隐形",
+                                value: 3
+                            },
+                            {
+                                name: "垃圾",
+                                value: 5
+                            },
+                            {
+                                name: "一个人",
+                                value: 123
+                            },
+                            {
+                                name: "家庭",
+                                value: 23
+                            },
+                            {
+                                name: "在家里",
+                                value: 11
+                            },
+                            {
+                                name: "衣柜",
+                                value: 17
+                            },
+                            {
+                                name: "做饭",
+                                value: 22
+                            },
+                            {
+                                name: "不结婚",
+                                value: 25
+                            },
+                            {
+                                name: "拖地",
+                                value: 27
+                            },
+                            {
+                                name: "老公",
+                                value: 30
+                            },
+                            {
+                                name: "家务活",
+                                value: 32
+                            },
+                            {
+                                name: "干净",
+                                value: 37
+                            },
+                            {
+                                name: "夫妻关系",
+                                value: 43
+                            },
+                            {
+                                name: "女性",
+                                value: 143
+                            },
+                            {
+                                name: "收拾衣服",
+                                value: 146
+                            },
+                            {
+                                name: "精力",
+                                value: 142
+                            },
+                            {
+                                name: "洁癖日常记录",
+                                value: 163
+                            },
+                            {
+                                name: "太多看不见",
+                                value: 9
+                            },
+                            {
+                                name: "琐碎轻松",
+                                value: 8
+                            },
+                            {
+                                name: "打扫卫生",
+                                value: 3
+                            },
+                            {
+                                name: "上班",
+                                value: 5
+                            },
+                            {
+                                name: "家庭主妇",
+                                value: 400
+                            },
+                            {
+                                name: "为什么 八卦",
+                                value: 23
+                            },
+                            {
+                                name: "杂谈",
+                                value: 11
+                            }
+                        ],
+                        color: []  // 添加一个空数组用于随机颜色
+                    }
+                ]
+            };
+
+            // 填充随机颜色数据
+            option.series[0].data.forEach(item => {
+                item.color = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+            });
+
+            if (chartRef) {
+                // 初始化图表
+                const myChart = echarts.init(chartRef);
+                // 使用指定的配置项和数据显示图表
+              option && myChart.setOption(option);
+            }
+      //男女对比
+      const dif=document.querySelector('.dif')
+      const difer= {
+         title: {
+              text: '现代男女隐形家务情况对比',
+               left: 'center', // 标题水平居中
+              top: 'top', // 标题垂直居于顶部，可以根据需要调整
+              textStyle: {
+                  fontSize: 30, // 标题字体大小
+                  color: '#614f4f', // 标题字体颜色
+                  fontWeight: 'normal' // 字体是否加粗
+              }
+            
+              
+          },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+               
+                    top: 'top', // 图例位置设置在底部，可以根据需要调整
+                    left: 'right' ,// 图例水平居中
+                // 图例组件，其中每个图例项的 icon 可以设置为图片
+                data: [{
+                    name: '男',
+                    // icon: 'https://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E5%B0%8F%E5%9B%BE%E6%A0%87%E5%9B%BE%E7%89%87&step_word=&lid=8424068508699593670&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=492222938,2093574639&os=3027558056,338854209&simid=492222938,2093574639&pn=6&rn=1&di=7383729104643686401&ln=1942&fr=&fmq=1724068157599_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=1e&objurl=https%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01cad85bd3dd74a8012099c8153059.jpg%3Fx-oss-process%3Dimage%2Fauto-orient%2C1%2Fresize%2Cm_lfit%2Cw_1280%2Climit_1%2Fsharpen%2C100&rpstart=0&rpnum=0&adpicid=0&nojc=undefined&dyTabStr=MCwzLDEsMiwsNyw2LDUsMTIsOQ%3D%3D'
+                }, {
+                    name: '女',
+                    // icon: 'image://url(这里填写你的图片URL地址)'
+                }]
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value'
+            },
+            yAxis: {
+                type: 'category',
+                data: ['洗完后清理水槽地面', '换季整理衣柜', '晾好衣服并叠好收纳', '整理冰箱卫生库存', '清理油烟机', '掌握日常用品并补充', '清理下水道', '刷马桶', '清理清扫工具', '洗衣服']
+            },
+            axisLabel: {
+              fontSize: 14,
+              color: '#333',
+              fontWeight: 'bold',
+              fontFamily: 'Arial, sans-serif' // 设置字体家族
+          },
+            series: [
+                {
+                    name: '男',
+                    type: 'bar',
+                    stack: 'total',
+                    label: {
+                        show: true
+                    },
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: [84.9, 89.23, 93.93, 75.75, 59.73, 50.69, 76.63, 84.18, 82.73, 64.88],
+                    // 设置系列颜色
+                    color: 'rgb(93, 151, 222)' // 这里设置为你喜欢的颜色
+                },
+                {
+                    name: '女',
+                    type: 'bar',
+                    stack: 'total',
+                    label: {
+                        show: true
+                    },
+                    emphasis: {
+                        focus: 'series'
+                    },
+                    data: [86.20, 54.98, 80.7, 59.73, 52.94, 86.89, 74.21, 61.9, 65.61, 52.48],
+                    // 设置系列颜色
+                    color: 'rgb(243, 95, 143)' // 这里设置为你喜欢的颜色
+                }
+            ]
+        };
+    if (dif){
+        const difChart = echarts.init(dif);
+        // 使用指定的配置项和数据显示图表
+        difer && difChart.setOption(difer);
+    }
+    //聊天
+    // script.js
+    document.addEventListener('DOMContentLoaded', function () {
+        const showMoreBtn = document.getElementById('showMore');
+        const bubbles = document.querySelectorAll('.chat-container .bubble');
+        let visibleBubbles = 0; // 记录当前可见的气泡数量
+
+        showMoreBtn.addEventListener('click', function () {
+            // 检查是否有隐藏的气泡
+            if (visibleBubbles < bubbles.length) {
+                const nextBubble = bubbles[visibleBubbles];
+                visibleBubbles++;
+
+                // 设置延时以实现逐个显现的效果
+                setTimeout(function () {
+                    nextBubble.classList.remove('hidden');
+                    nextBubble.style.animation = 'slideDown 0.5s ease forwards';
+                }); // 每个气泡的延时增加，以便它们依次出现
+            }
+        });
+    });
+
+    //词汇统计
+    const wordsearch =document.querySelector('.wordsearch')
+    const result = {
+        title: {
+            text: '“家务承担者”词频一览'
+        },
+        tooltip: {
+            trigger: 'item', // 鼠标悬停时触发
+            formatter: '{a} <br/>{b} : {c} ({d}%)' // 模板字符串，用于定义提示框的显示格式
+        },
+        legend: {},
+        toolbox: {
+            show: true,
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                dataView: { readOnly: false },
+                magicType: { type: ['line', 'bar'] },
+                restore: {},
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: [
+                '男的/儿子',
+                '老婆/妻子',
+                '保洁/保姆',
+                '丈夫',
+                '婆婆',
+                '妈妈',
+                '女儿'
+            ]
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter: '{value} '
+            }
+        },
+        series: [
+            {
+                type: 'line',
+                data: [126, 229, 340, 1125, 1132, 1482, 1597],
+                markPoint: {
+                    data: [
+                        { type: 'max', name: 'Max' },
+                        { type: 'min', name: 'Min' }
+                    ]
+                }
+            }
+        ]
+    };
+   
+        if (wordsearch) {
+            const searchChart = echarts.init(wordsearch);
+
+
+
+            result && searchChart.setOption(result);
+        }
+
+    //柱形图
+    const influence = document.querySelector('.influence')
+    const table = {
+        title: {
+            text: '女性受家务和生育影响更大'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {},
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'value',
+            boundaryGap: [0, 0.01]
+        },
+        yAxis: {
+            type: 'category',
+            data: [
+                '产后未能返回原岗位',
+                '失去进修机会',
+                '职业中断',
+                '影响升职',
+                '收入降低'
+            ]
+        },
+        series: [
+            {
+                name: '2012',
+                type: 'bar',
+                data: [16, 17, 19, 24, 34]
+            }
+        ]
+    };
+  
+       
+        if (influence) {
+            const influenceChart = echarts.init(influence);
+
+
+
+            table && influenceChart.setOption(table);
+        }
+//柱形图
+const tall=document.querySelector('.tall')
+const taller={
+     legend: {},
+    tooltip: {},
+    dataset: {
+        source: [
+            ['product', '男性', '女性'],
+            ['工作时间', 47.27, 37.1],
+            ['家务时间', 10.18, 19.7],
+            ['闲暇时间', 18.45, 16.93]
+            // ['Walnut Brownie', 72.4, 53.9, 39.1]
+        ]
+    },
+    xAxis: { type: 'category' },
+    yAxis: {},
+    // Declare several bar series, each will be mapped
+    // to a column of dataset.source by default.
+    series: [{ type: 'bar' }, { type: 'bar' }]
+}
+    if (tall) {
+        const tallChart = echarts.init(tall);
+
+
+
+        taller && tallChart.setOption(taller);
+    }
+
+    //饼图
+    const unmarry = document.querySelector('.unmarry')
+    const biscuit = {
+        title: [
+            {
+                text: '未婚男承担家务情况',
+                left: 'left'
+            },
+            {
+                subtext: '和家人同住（男）',
+                left: '20%',
+                top: '45%',
+                textAlign: 'center'
+            },
+
+            {
+                subtext: '和伴侣同住（男）',
+                left: '20%',
+                top: '93%',
+                textAlign: 'center'
+            },
+            {
+                subtext: '和伴侣子女同住（男）',
+                left: '70%',
+                top: '93%',
+                textAlign: 'center'
+            },
+            {
+                subtext: '独居（男）',
+                left: '70%',
+                top: '45%',
+                textAlign: 'center'
+            }
+        ],
+        legend: {
+            orient: 'vertical', // 图例的布局方式，'horizontal' 为水平，'vertical' 为垂直
+
+            text: [
+                // 图例项的名称
+                '凡手需是自己',
+                '和家人同佳/男',
+                '经常会做',
+                '和伴及子女网佳/男',
+                '经常会做'
+            ]
+        },
+
+        tooltip: {},
+        dataset: {
+            source: [
+                ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
+                ['几乎都是自己做(男)', 21.4, 32.7, 31.8, 65.4, 0, , 0, 0],
+                ['经常会做(男)', 25, 40.4, 31.8, 13.5, 0, 0, 0, 0],
+                ['偶尔会做(男)', 32.1, 17.3, 22.7, 7.7, 0, 0, 0, 0],
+                ['从来不做(男)', 3.6, 0, 0, 0, 0, 0, 0, 0]
+            ]
+        },
+        series: [
+            {
+                color: [
+                    '#e6ebf0',
+                    '#a5e1ff',
+                    '#41aff0',
+                    '#047ccc',
+                    '#1e3c55',
+                    '#e6ebf0',
+                    '#e6ebf0',
+                    '#dc5f91',
+                    '#e44c87',
+                    '#af235a'
+                ],
+                type: 'pie',
+                radius: '20%',
+                center: ['25%', '30%']
+                // No encode specified, by default, it is '2012'.
+            },
+            {
+                type: 'pie',
+                radius: '20%',
+                center: ['75%', '30%'],
+                encode: {
+                    itemName: 'product',
+                    value: '2013'
+                }
+            },
+            {
+                type: 'pie',
+                radius: '20%',
+                center: ['25%', '75%'],
+                encode: {
+                    itemName: 'product',
+                    value: '2014'
+                }
+            },
+            {
+                type: 'pie',
+                radius: '20%',
+                center: ['75%', '75%'],
+                encode: {
+                    itemName: 'product',
+                    value: '2015'
+                }
+            }
+        ]
+    };
+   
+       
+        if (unmarry) {
+            const unmarryChart = echarts.init(unmarry);
+            biscuit && unmarryChart.setOption(biscuit);
+        }
+    
+    //未婚女
+    const unmerry =document.querySelector('.unmerry')
+    const bis = {
+        title: [
+            {
+                text: '未婚女承担家务情况',
+                left: 'left'
+            },
+            {
+                subtext: '和家人同住（女）',
+                left: '20%',
+                top: '45%',
+                textAlign: 'center'
+            },
+
+            {
+                subtext: '和伴侣同住（女）',
+                left: '20%',
+                top: '93%',
+                textAlign: 'center'
+            },
+            {
+                subtext: '和伴侣子女同住（女）',
+                left: '70%',
+                top: '93%',
+                textAlign: 'center'
+            },
+            {
+                subtext: '独居（女）',
+                left: '70%',
+                top: '45%',
+                textAlign: 'center'
+            }
+        ],
+        legend: {
+            orient: 'vertical', // 图例的布局方式，'horizontal' 为水平，'vertical' 为垂直
+            //  right:"right"
+        },
+
+        tooltip: {},
+        dataset: {
+            source: [
+                ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
+                ['几乎都是自己做(女)', 11.3, 20.7, 27.6, 60.1, 0],
+                ['经常会做(女)', 29.3, 39.2, 30.2, 8.8, 0],
+                ['偶尔会做(女)', 35.6, 34.8, 30.3, 17.1, 0],
+                ['从来不做(女)', 1.3, 1.3, 0, 0, 0],
+                ['不一定看情况', 19.3, 14, 13.4, 14, 0]
+            ]
+        },
+        series: [
+            {
+                color: ['#e6ebf0', '#ff91b9', '#dc5f91', '#e44c87', '#af235a'],
+                type: 'pie',
+                radius: '20%',
+                center: ['25%', '30%']
+                // No encode specified, by default, it is '2012'.
+            },
+            {
+                type: 'pie',
+                radius: '20%',
+                center: ['75%', '30%'],
+                encode: {
+                    itemName: 'product',
+                    value: '2013'
+                }
+            },
+            {
+                type: 'pie',
+                radius: '20%',
+                center: ['25%', '75%'],
+                encode: {
+                    itemName: 'product',
+                    value: '2014'
+                }
+            },
+            {
+                type: 'pie',
+                radius: '20%',
+                center: ['75%', '75%'],
+                encode: {
+                    itemName: 'product',
+                    value: '2015'
+                }
+            }
+        ]
+    };
+   
+        if (unmerry) {
+                // 初始化图表
+                const unmerryChart = echarts.init(unmerry);
+                // 使用刚指定的配置项和数据显示图表
+                unmerryChart.setOption(bis);
+            }
+    
+    //已婚男
+     document.addEventListener('DOMContentLoaded', function () {
+    const married =document.querySelector('.married')
+    const date = {
+        title: [
+            {
+                text: '已婚男承担家务情况',
+                left: 'left'
+            },
+            {
+                subtext: '和家人同住（男）',
+                left: '20%',
+                top: '45%',
+                textAlign: 'center'
+            },
+
+            {
+                subtext: '和伴侣同住（男）',
+                left: '20%',
+                top: '93%',
+                textAlign: 'center'
+            },
+            {
+                subtext: '和伴侣子女同住（男）',
+                left: '70%',
+                top: '45%',
+                textAlign: 'center'
+            },
+
+        ],
+        legend: {
+            orient: 'vertical',
+            right: 'right'
+        },
+        tooltip: {},
+        dataset: {
+            source: [
+                ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
+                ['几乎都是自己做(男)', 10.2, 28.6, 25.3],
+                ['经常会做(男)', 38.8, 52, 53.7],
+                ['偶尔会做(男)', 38.8, 14.3, 13.6],
+                ['从来不做(男)', 2, 0, 0, 0],
+                ['看情况做（男）', 12, 5.2, 7.4]
+            ]
+        },
+        series: [
+            {
+                color: ['#e6ebf0', '#a5e1ff', '#41aff0', '#047ccc', '#1e3c55'],
+                type: 'pie',
+                radius: '20%',
+                center: ['25%', '30%']
+                // No encode specified, by default, it is '2012'.
+            },
+            {
+                type: 'pie',
+                radius: '20%',
+                center: ['75%', '30%'],
+                encode: {
+                    itemName: 'product',
+                    value: '2013'
+                }
+            },
+            {
+                type: 'pie',
+                radius: '20%',
+                center: ['25%', '75%'],
+                encode: {
+                    itemName: 'product',
+                    value: '2014'
+                }
+            }
+        ]
+    };
+  
+         if (married) {
+           // 初始化图表
+           const marriedChart = echarts.init(married);
+           // 使用刚指定的配置项和数据显示图表
+           marriedChart.setOption(date);
+       }
+    })
+    //已婚女
+    // 引入 ECharts
+
+        // 等待DOM加载完成
+        document.addEventListener('DOMContentLoaded', function () {
+            const merried = document.querySelector('.merried'); // 确保选择器正确匹配您的元素
+            const data = {
+            title: [
+                    {
+                        text: '已婚女承担家务情况',
+                        left: 'left'
+                    },
+                    {
+                        subtext: '和家人同住（女）',
+                        left: '20%',
+                        top: '45%',
+                        textAlign: 'center'
+                    },
+
+                    {
+                        subtext: '和伴侣同住（女）',
+                        left: '20%',
+                        top: '93%',
+                        textAlign: 'center'
+                    },
+                    {
+                        subtext: '和伴侣子女同住（女）',
+                        left: '70%',
+                        top: '45%',
+                        textAlign: 'center'
+                    },
+
+                ],
+                legend: {
+                    orient: 'vertical',
+                    right: 'right'
+                },
+                tooltip: {},
+                dataset: {
+                    source: [
+                        ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
+                        ['几乎都是自己做(女)', 18.8, 31.3, 51.5],
+                        ['经常会做(女)', 40.1, 38.9, 35.1],
+                        ['偶尔会做(女)', 37.3, 19.4, 35.1],
+                        ['从来不做(女男)', 0.5, 0, 0],
+                        ['看情况做（女）', 13.3, 9.9, 4]
+                    ]
+                },
+                series: [
+                    {
+                        color: ['#e6ebf0', '#ff91b9', '#dc5f91', '#e44c87', '#af235a'],
+                        type: 'pie',
+                        radius: '20%',
+                        center: ['25%', '30%']
+                        // No encode specified, by default, it is '2012'.
+                    },
+                    {
+                        type: 'pie',
+                        radius: '20%',
+                        center: ['75%', '30%'],
+                        encode: {
+                            itemName: 'product',
+                            value: '2013'
+                        }
+                    },
+                    {
+                        type: 'pie',
+                        radius: '20%',
+                        center: ['25%', '75%'],
+                        encode: {
+                            itemName: 'product',
+                            value: '2014'
+                        }
+                    }
+                ]
+            };
+
+            if (merried) {
+                // 初始化图表
+                const merriedChart = echarts.init(merried);
+                // 使用刚指定的配置项和数据显示图表
+                merriedChart.setOption(data);
+            }
+        });
+    //环形图
+   window.onload = function () {
+        const pic = document.querySelector('.pic');
+        const picture = {
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                top: '5%',
+                left: 'center'
+            },
+            series: [
+                {
+                    name: 'Access From',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderRadius: 10,
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: 30,
+                            fontWeight: 'bold'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: [
+                        { value: 78.31, name: '吞噬时间和精力' },
+                        { value: 65.17, name: '家人无视忽略' },
+                        { value: 42.18, name: '家人影响破坏' },
+                        { value: 50.94, name: '没有被说价值' },
+                        { value: 25.57, name: '被评没事找事' },
+                        { value: 50.4, name: '被认为很轻松' }
+                    ]
+                }
+            ]
+        };
+
+        if (pic) {
+            const picChart = echarts.init(pic);
+            picChart.setOption(picture);
+        }
+    };
+</script>
